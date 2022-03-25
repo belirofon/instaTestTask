@@ -1,0 +1,28 @@
+@import url(./normalize.css);
+@import url(./__modal.scss);
+@import url(./main.scss);
+@import url(./__fonts.scss);
+
+body {
+  max-width: 1920px;
+  max-height: 1080px;
+  background: url(../assets/img/fon.png)  no-repeat;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+* a {
+  text-transform: none;
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-top: 79px;
+  padding-right: 50px;
+  text-align: center;
+}
+

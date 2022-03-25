@@ -1,0 +1,138 @@
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.container label {
+  cursor: pointer;
+}
+
+.modal-open {}
+
+
+.modal-check {
+  appearance: none;
+}
+
+.modal-wrapper {
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  font-size: 0;
+  overflow: hidden;
+
+  border-radius: 50px;
+}
+
+#modal:checked~.modal-wrapper {
+  & h3 {
+    font-size: 2.1rem;
+  }
+
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & div {
+    display: inline-block;
+  }
+
+  overflow: visible;
+  width: 950px;
+  height: 400px;
+
+  position: absolute;
+  left: -850px;
+  top: 70px;
+  z-index: 20;
+  background: linear-gradient(hsl(0, 2%, 84%), #ffffff);
+}
+
+.modal {
+  width: 400px;
+  height: 100;
+  padding-left: 25px;
+
+  text-align: left;
+}
+
+#modal:checked~span {
+  color: #5271F3;
+}
+
+.modal-open::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 170px;
+  width: 10px;
+  height: 10px;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+  transform: rotate(45deg);
+  transition: .3s all;
+}
+
+#modal:checked~.modal-open::before {
+  border-right: 7px solid #5271F3;
+  border-bottom: 7px solid #5271F3;
+}
+
+.button-submit__link::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 600px;
+  width: 25px;
+  height: 25px;
+  border-right: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  transform: rotate(-45deg);
+  transition: .3s all;
+}
+
+.button-submit__link::after {
+  content: "";
+  position: absolute;
+  top: 37px;
+  left: 585px;
+  width: 43px;
+  height: 25px;
+  border-bottom: 5px solid #ffffff;
+  transition: .3s all;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.search-input {
+  font-size: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+#modal-check:checked~.search-input {
+  font-size: 2rem;
+  overflow: visible;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: -270px;
+  .input-search__icon {
+    position: absolute;
+    right: -250px;
+    top: 9px;
+  }
+  .input-search__text {
+    width: 250px;
+    border-radius: 25px;
+  }
+}

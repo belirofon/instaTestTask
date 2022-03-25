@@ -1,0 +1,17 @@
+{
+  "name": "instaTestTask",
+  "version": "1.0.0",
+  "description": "test task for insta perm company",
+  "source": "src/index.html",
+  "author": "belirofon",
+  "license": "MIT",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.4.0",
+    "parcel": "^2.4.0"
+  }
+}

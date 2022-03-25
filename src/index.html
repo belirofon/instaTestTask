@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.scss">
+  <script src="./js/index.js"></script>
+  <title>Company</title>
+</head>
+
+<body class="wrapper">
+  <header class="header">
+    <div class="company">Company</div>
+    <nav class="nav">
+      <div class="nav-link"><a href="#">Products</a></div>
+      <div class="nav-link"><a href="#">Prices</a></div>
+      <div class="nav-link"><a href="#">Security</a></div>
+      <div class="nav-link container">
+        <input id="modal" class="modal-check" type="checkbox">
+        <label for="modal">Resources<span class="modal-open"></span></label>
+        <div class="modal-wrapper">
+          <div class="modal-about modal">
+            <h3 class="about-title">About</h3>
+            <p class="about-description">We aim to continuously refine our services in highly dynamic industry.</p>
+          </div>
+          <div class="modal-careers modal">
+            <h3 class="careers-title">Careers</h3>
+            <p class="careers-description">Come join our team and help us build the future.</p>
+          </div>
+          <div class="modal-support modal">
+            <h3 class="support-title">Support</h3>
+            <p class="support-description">Answers to FAQs and how to contact our customer service team.</p>
+          </div>
+          <div class="modal-blog modal">
+            <h3 class="blog-title">Blog</h3>
+            <p class="blog-description">Aroduct announcements, company updates, and industry perspectives.</p>
+          </div>
+        </div>
+
+        <!-- модальное окно на чекбоксе -->
+      </div>
+
+    </nav>
+    <div class="wrapper-form">
+      <div class="login">
+        <button class="login__button">Log in</button>
+      </div>
+      <div class="language-modal">English</div>
+      <div class="search">
+        <input id="modal-check" class="modal-check" type="checkbox">
+        <label for="modal-check"><img class="search-icon" src="./assets/img/search.svg" alt=""></label>
+        <div class="search-input"><input class="input-search__text" placeholder="Search" type="text"><img class="input-search__icon" src="./assets/img/search.svg" alt="search"></div>
+
+        <!-- модальное окно на чекбоксе -->
+      </div>
+    </div>
+  </header>
+  <section class="tagline">
+    <h2 class="tagline__title">One app, all<br> things money</h2>
+    <span class="tagline__description">Open a free account in minutes right from your phone,<br> and make your money go
+      further</span>
+  </section>
+  <section class="button">
+    <button type="submit" class="button__submit"><span class="button-submit__link">Get started</span></button>
+  </section>
+  <footer class="footer"></footer>
+</body>
+
+</html>

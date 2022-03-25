@@ -1,0 +1,72 @@
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.company {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 2.9rem;
+  margin-left: 10%;
+}
+.nav {
+  display: flex;
+}
+.nav-link__opened {
+  font-size: 1rem;
+}
+
+.nav-link {
+  font-size: 1.9rem;
+  margin-left: 62px;
+}
+
+.wrapper-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  * {
+    padding-right: 5%;
+  }
+}
+
+
+.login__button {
+  font-family: "Libre Franclin";
+  width: 130px;
+  height: 55px;
+  border-radius: 28px;
+  
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10%;
+}
+.tagline__title {
+  font-weight: bold;
+  font-size: 8rem;
+  text-align: center;
+}
+.tagline__description {
+  font-weight: 400;
+  font-size: 1.83rem;
+  color: #007DFB;
+  text-align: center;
+}
+.button {
+  margin-left: 40%;
+  margin-top: 13%;
+  position: relative;
+}
+.button__submit {
+  font-family: "Libre Franclin";
+  width: 332px;
+  height: 123px;
+  background-color: #007DFB;
+  border-radius: 62px;
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
